@@ -5,7 +5,7 @@
 
 float angle = 0.0f;
 
-void drawTrefoilKnot() {
+void drawKnot() {
     glBegin(GL_LINE_STRIP); /* write GL_LINE_LOOP if you want end of the lines to connect */
     for (float t = 0; t < 22 * PI; t += 0.01) {
         float y = (2 - (cos ((2 * t)/5))) * sin(t);
@@ -22,7 +22,7 @@ void display() {
     glTranslatef(0.0, 0.0, -6.0);
     glRotatef(angle, 1.0, 1.0, 1.0); /* you can change this part to make it rotate to your liking */
     glColor3f(1.0, 1.0, 1.0);
-    drawTrefoilKnot();
+    drawKnot();
     glBegin(GL_LINES);
     glColor3f(1, 0, 0); glVertex3f(0, 0, 0); glVertex3f(10, 0, 0);
     glColor3f(0, 1, 0); glVertex3f(0, 0, 0); glVertex3f(0, 10, 0);
