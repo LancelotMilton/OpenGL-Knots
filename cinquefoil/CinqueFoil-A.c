@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitWindowSize(1000, 1000);
     glutInitDisplayMode(GLUT_SINGLE || GLUT_RGB);
-    glutCreateWindow("Trefoil Knot");
+    glutCreateWindow("Cinquefoil Knot");
 
     glClearColor(0.0, 0.0, 0.0, 1.0);
     glClearDepth(1.0f);                   /* Set background depth to farthest */
