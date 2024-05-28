@@ -7,7 +7,7 @@ float angle = 0.0f;
 
 void drawKnot() {
     glBegin(GL_LINE_STRIP); /* write GL_LINE_LOOP if you want end of the lines to connect */
-    for (float t = 0; t < 22 * PI; t += 0.01) {
+    for (float t = 0; t < 10 * PI; t += 0.01) {
         float y = (2 - (cos ((2 * t)/5))) * sin(t);
         float z = -sin((2*t)/5);
         float x = (2 - (cos ((2 * t)/5))) * cos(t);       
